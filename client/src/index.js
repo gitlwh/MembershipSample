@@ -31,7 +31,7 @@ const auth = new Auth({
     redirect_uri: config.redirect_uri,
     onAuthRequired: ({history}) => history.push('/login')
 });
-
+console.log(config.redirect_uri);
 ReactDOM.render(
     <Provider store={store}>
         <Router history={history}>
